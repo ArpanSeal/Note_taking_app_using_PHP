@@ -9,10 +9,10 @@ Back-end : PHP
 
 Database : MySQL
 
-#Features
+# Features
 • Secure login and signup system with md5 encryption
 • Help you to understand the advantage of note-taking
 
-#Demo
+# Demo
 View live demo of this project 👇
 https://notesapp-arpan.000webhostapp.com/
