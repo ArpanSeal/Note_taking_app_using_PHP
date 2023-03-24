@@ -16,4 +16,5 @@ Database : MySQL
 
 # Demo
 View live demo of this project 👇
+
 https://notesapp-arpan.000webhostapp.com/
