@@ -1,6 +1,6 @@
 # Note_taking_app_using_PHP
 
-A Note-taking website with proper login and sign-up form. All the notes the user is going to save, will be stored in the backend and shown in proper a sequence after a successful login.
+A Note-taking website with proper login and sign-up form. All the notes the user is going to save, will be stored in the backend and shown in a proper sequence after a successful login.
 
 # Tech Stack used
 Front-end : HTML, CSS, Bootstrap, Javascript & AJAX
