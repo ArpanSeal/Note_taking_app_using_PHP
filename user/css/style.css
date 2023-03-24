@@ -1,0 +1,195 @@
+.navbar,
+.navbar-brand{
+  z-index: 1;
+  color: white !important;
+  font-family: 'Shantell Sans', cursive;
+}
+
+.navbar-brand{
+    font-size: 30px !important;
+}
+
+.nav-link{
+    color: rgb(186, 186, 186) !important;
+    font-size: 20px !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link.active{
+    color: white !important;
+}
+
+.navbar::before {
+  content: "";
+  background-color: black !important;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+}
+
+.togglerIcon {
+  background-image: url('../../assets/img/navbarToggler.png') !important;
+}
+
+#search{
+    width: 300px;
+}
+
+#txtHeading{
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(86, 86, 86);
+}
+
+#noteTitle{
+  font-weight: 600;
+}
+
+#charLimit{
+  font-weight: 500;
+  color: grey;
+  text-align: right;
+  width: 100%;
+}
+
+#charLimitTitle{
+  font-weight: 500;
+  color: grey;
+  text-align: right;
+  width: 100%;
+}
+
+#noteBody{
+  padding: 2.5rem;
+}
+
+.blue {
+  background: linear-gradient(
+    120deg,
+    #7730a8,
+    #5334ad 40%,
+    #5792ff 90%,
+    #67b2ff 100%
+  );
+  overflow: hidden;
+  position: relative;
+}
+
+.spread {
+  background: url("../../assets/img/bg.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.08;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: fadeSpread;
+}
+
+.sep-dual.sep-gray:after,
+.sep-dual.sep-gray:before {
+  background: #f7f9ff;
+}
+
+.sep-dual:before,
+.sep-dual:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -50%;
+  left: -5%;
+  z-index: 2;
+  overflow: hidden;
+  width: 110%;
+  height: 50%;
+  transform: rotate(-4deg);
+}
+
+.sep-dual:after {
+  transform: rotate(4deg);
+}
+
+#card-bg {
+  border: none;
+  width: 25rem;
+  height: 25rem;
+  font-size: 1.1rem;
+  font-family: 'Shantell Sans', cursive;
+  color: rgb(0, 0, 194);
+  overflow: hidden;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 2rem;
+  top: 2.5rem;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.3;
+}
+.closeBtn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.closeBtn:before,
+.closeBtn:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #ed0000;
+}
+.closeBtn:before {
+  transform: rotate(45deg);
+}
+.closeBtn:after {
+  transform: rotate(-45deg);
+}
+
+.posi{
+    position: relative;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.left-border {
+  border-left: 2px solid rgb(234, 233, 233);
+  padding-left: 1.2rem;
+  color: rgb(222, 220, 220);
+}
+
+.footerIcon {
+  text-decoration: none;
+  white-space: nowrap;
+  color: white;
+  font-family: 'Shantell Sans', cursive;
+}
+
+h1, .btn{
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+@media (max-width: 991px) {
+  #search {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .logout {
+    margin-top: 2rem !important;
+  }
+}
