@@ -12,7 +12,7 @@ Database : MySQL
 # Features
 • Secure login and signup system with md5 encryption
 
-• Help you to understand the advantage of note-taking
+• Help you to understand the advantages of note-taking
 
 # Demo
 View live demo of this project 👇
