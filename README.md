@@ -11,6 +11,7 @@ Database : MySQL
 
 # Features
 • Secure login and signup system with md5 encryption
+
 • Help you to understand the advantage of note-taking
 
 # Demo
