@@ -2,7 +2,7 @@ $(document).ready(function () {
   $("#emailF").blur(function () {
     let email = $(this).val();
     if (email == "") {
-      $("#EmailErrorF").text("*Please Enter Your Email");
+      $("#EmailErrorF").text("* Please Enter Your Email");
     } else {
       $("#EmailErrorF").text("");
     }
@@ -12,7 +12,7 @@ $(document).ready(function () {
   $("#UsernameF").change(function () {
     let Username = $(this).val();
     if (Username == "") {
-      $("#UsernameErrorF").text("*Username Can not Empty");
+      $("#UsernameErrorF").text("* Username can not be Empty");
     } else {
       $("#UsernameErrorF").text("");
     }
@@ -25,7 +25,7 @@ $(document).ready(function () {
         /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.* )(?=.*[^a-zA-Z0-9]).{8,16}$/m;
       if (!regex.test(pass)) {
         $("#PasswordErrorR").text(
-          "Password must contain Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character"
+          "* Password must contain Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character"
         );
         $("#resetSubmit").attr("disabled", true);
       } else {
@@ -33,7 +33,7 @@ $(document).ready(function () {
         $("#resetSubmit").attr("disabled", false);
       }
     } else {
-      $("#PasswordErrorR").text("Password Can not Empty");
+      $("#PasswordErrorR").text("* Password can not be Empty");
       $("#resetSubmit").attr("disabled", true);
     }
   });
@@ -46,11 +46,11 @@ $(document).ready(function () {
         $("#ConfirmPassErrorR").text("");
         $("#resetSubmit").attr("disabled", false);
       } else {
-        $("#ConfirmPassErrorR").text("*Please Enter the Same Password");
+        $("#ConfirmPassErrorR").text("* Please Enter the Same Password");
         $("#resetSubmit").attr("disabled", true);
       }
     } else {
-      $("#ConfirmPassErrorR").text("*Please Confirm the Password");
+      $("#ConfirmPassErrorR").text("* Please Confirm the Password");
       $("#resetSubmit").attr("disabled", true);
     }
   });
@@ -62,10 +62,10 @@ $(document).ready(function () {
     let user_err = document.getElementById("UsernameErrorF");
 
     if (email == "") {
-      email_err.innerHTML = "*Please Enter Email Address.";
+      email_err.innerHTML = "* Please Enter Email Address.";
     } else if (Username == "") {
       email_err.innerHTML = "";
-      user_err.innerHTML = "*Please Enter Username.";
+      user_err.innerHTML = "* Please Enter Username.";
     } else {
       user_err.innerHTML = "";
       $.ajax({
@@ -86,10 +86,10 @@ $(document).ready(function () {
               let cpass_err = document.getElementById("ConfirmPassErrorR");
 
               if (NewPassword == "") {
-                pass_err.innerHTML = "*Please Enter New Password.";
+                pass_err.innerHTML = "* Please Enter New Password.";
               } else if (ConfirmPassword == "") {
                 pass_err.innerHTML = "";
-                cpass_err.innerHTML = "*Please Confirm the New Password.";
+                cpass_err.innerHTML = "* Please Confirm the New Password.";
               } else {
                 cpass_err.innerHTML = "";
                 $.ajax({

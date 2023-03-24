@@ -9,16 +9,16 @@ $(document).ready(function () {
     let pass_err = document.getElementById("PasswordError");
     let cpass_err = document.getElementById("ConfirmPassError");
     if (email == "") {
-      email_err.innerHTML = "*Please Enter Email Address.";
+      email_err.innerHTML = "* Please Enter Email Address.";
     } else if (Username == "") {
       email_err.innerHTML = "";
-      user_err.innerHTML = "*Please Enter Username.";
+      user_err.innerHTML = "* Please Enter Username.";
     } else if (Password == "") {
       user_err.innerHTML = "";
-      pass_err.innerHTML = "*Please Enter Password.";
+      pass_err.innerHTML = "* Please Enter Password.";
     } else if (ConfirmPass == "") {
       pass_err.innerHTML = "";
-      cpass_err.innerHTML = "*Please Confirm the Password.";
+      cpass_err.innerHTML = "* Please Confirm the Password.";
     } else {
       cpass_err.innerHTML = "";
       $.ajax({

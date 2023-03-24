@@ -2,7 +2,7 @@ $(document).ready(function () {
   $("#emailL").blur(function () {
     let email = $(this).val();
     if (email == "") {
-      $("#EmailErrorL").text("*Please Enter Your Email Address or Username");
+      $("#EmailErrorL").text("* Please Enter Your Email Address or Username");
     } else {
       $("#EmailErrorL").text("");
     }
@@ -12,7 +12,7 @@ $(document).ready(function () {
   $("#passwordL").change(function () {
     let Password = $(this).val();
     if (Password == "") {
-      $("#PasswordErrorL").text("*Password Can not Empty");
+      $("#PasswordErrorL").text("* Password can not be Empty");
     } else {
       $("#PasswordErrorL").text("");
     }

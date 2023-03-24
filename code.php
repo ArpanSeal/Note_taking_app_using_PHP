@@ -73,7 +73,7 @@ if (isset($_POST['submit'])) {
             }
         }
     } else {
-        $UsernameError = "* Username Cannot Empty";
+        $UsernameError = "* Username cannot be Empty";
     }
 
     if (!empty($Password)) {
@@ -84,13 +84,13 @@ if (isset($_POST['submit'])) {
             $PasswordError = false;
         }
     } else {
-        $PasswordError = "Password Cannot be empty";
+        $PasswordError = "* Password cannot be empty";
     }
 
     if (!empty($ConfirmPass)) {
 
         if ($ConfirmPass != $Password) {
-            $ConfirmPassError = "Please Enter same Password";
+            $ConfirmPassError = "* Please Enter same Password";
         }
     } else {
         $ConfirmPassError = "Please Confirm Password";

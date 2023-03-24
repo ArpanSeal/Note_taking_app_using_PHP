@@ -3,7 +3,7 @@ $(document).ready(function () {
     let email = $(this).val();
 
     if (email == "") {
-      $("#EmailError").text("Please Enter Your Email");
+      $("#EmailError").text("* Please Enter Your Email");
       $("#signinSubmit").attr("disabled", true);
       // $(this).attr('required', true);
       EmailError = 1;
@@ -11,7 +11,7 @@ $(document).ready(function () {
       let match = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
 
       if (!match.test(email)) {
-        $("#EmailError").text("Invalid Email Format");
+        $("#EmailError").text("* Invalid Email Format");
         $("#signinSubmit").attr("disabled", true);
         EmailError = 1;
       } else {
@@ -32,7 +32,7 @@ $(document).ready(function () {
       let regex = /^[A-Za-z]{1}[A-Za-z0-9]{5,31}$/;
       if (!regex.test(Username)) {
         $("#UsernameError").text(
-          "Please Enter Valid Username conatining letters and number"
+          "* Please Enter Valid Username conatining letters and number"
         );
         $("#signinSubmit").attr("disabled", true);
         UsernameError = 1;
@@ -42,7 +42,7 @@ $(document).ready(function () {
         UsernameError = 0;
       }
     } else {
-      $("#UsernameError").text("Username Can not Empty");
+      $("#UsernameError").text("* Username can not be Empty");
       $("#signinSubmit").attr("disabled", true);
       UsernameError = 1;
     }
@@ -57,7 +57,7 @@ $(document).ready(function () {
         /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.* )(?=.*[^a-zA-Z0-9]).{8,16}$/m;
       if (!regex.test(Password)) {
         $("#PasswordError").text(
-          "Password must contain Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character"
+          "* Password must contain Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character"
         );
         $("#signinSubmit").attr("disabled", true);
         PasswordError = 1;
@@ -67,7 +67,7 @@ $(document).ready(function () {
         PasswordError = 0;
       }
     } else {
-      $("#PasswordError").text("Password Can not Empty");
+      $("#PasswordError").text("* Password can not be Empty");
       $("#signinSubmit").attr("disabled", true);
       PasswordError = 1;
     }
@@ -84,12 +84,12 @@ $(document).ready(function () {
         $("#signinSubmit").attr("disabled", false);
         ConfirmPass = 0;
       } else {
-        $("#ConfirmPassError").text("Please Enter The Same As Password");
+        $("#ConfirmPassError").text("* Please Enter The Same As Password");
         $("#signinSubmit").attr("disabled", true);
         ConfirmPass = 1;
       }
     } else {
-      $("#ConfirmPassError").text("Please Confirm Password");
+      $("#ConfirmPassError").text("* Please Confirm Password");
       $("#signinSubmit").attr("disabled", true);
       ConfirmPass = 1;
     }
