@@ -122,7 +122,7 @@ session_start();
                 </div>
                 <div class="d-flex">
                     <button type="button" id="loginSubmit" class="btn btn-primary m-4">Login</button>
-                    <button type="button" class="btn btn-secondary m-4" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary mt-4 mb-4" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
 
