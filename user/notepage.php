@@ -59,7 +59,7 @@ $username = $_SESSION['username'];
 
         <div class="spread"></div>
         <div class="container my-4">
-            <h1 style="color: white;">Welcome to NotesApp</h1>
+            <h1 style="color: white;">Welcome to NotesApp, <?php echo $username; ?></h1>
             <div class="card my-3">
                 <div class="card-body" style="box-shadow: 0 20px 25px rgba(0, 0, 0, 0.50);">
                     <h5 class="card-title" id="txtHeading">Add Title (Character Limit: 15)</h5>
@@ -122,27 +122,40 @@ $username = $_SESSION['username'];
 
     <script>
         function deleteNote(index) {
-            console.log("Hello");
-            $.ajax({
-                type: "POST",
-                url: "code.php",
-                data: {
-                    delete: "delete",
-                    index: index
-                },
-                success: function(response) {
-                    console.log(response);
-                    if (response == "success") {
-                        swal({
-                            title: "Hurray!",
-                            text: "Your Note has been deleted successfully.",
-                            icon: "success",
-                        }).then((value) => {
-                            location.reload();
+            swal({
+                    title: "Are you sure?",
+                    text: "Once deleted, you will not be able to recover this note!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        $.ajax({
+                            type: "POST",
+                            url: "code.php",
+                            data: {
+                                delete: "delete",
+                                index: index
+                            },
+                            success: function(response) {
+                                if (response == "success") {
+                                    swal({
+                                        title: "Hurray!",
+                                        text: "Your Note has been deleted successfully.",
+                                        icon: "success",
+                                    }).then((value) => {
+                                        location.reload();
+                                    });
+                                } else {
+                                    swal("Your note is not deleted due to some internal issue!");
+                                }
+                            }
                         });
+                    } else {
+                        swal("Your note is safe!");
                     }
-                }
-            })
+                })
         }
     </script>
 

@@ -174,27 +174,20 @@
   /**
    * Preloader
    */
-  let preloader = select("#preloader");
-  if (preloader) {
-    window.setTimeout(function(){
-      window.addEventListener("load", () => {
-      window.setTimeout("fadeout();", 1000);
-      preloader.remove();
-      }, 1000);
-    });
-  }
-  //   setTimeout(function(){
-  //     $('#preloader').fadeOut();
-  //   }, 3000);
-
-  //   $(document).ready(function () {
-  //     window.setTimeout("fadeout();", 1000);
-  //   });
-
-  function fadeout() {
-    $("#preloader").delay(500).fadeOut();
-  }
-
+    let preloader = select("#preloader");
+    if (preloader) {
+      window.setTimeout(function(){
+        window.addEventListener("load", () => {
+        window.setTimeout("fadeout();", 1000);
+        preloader.remove();
+        }, 1000);
+      });
+    }
+  
+    function fadeout() {
+      $("#preloader").delay(500).fadeOut();
+    }
+  
   /**
    * Testimonials slider
    */
