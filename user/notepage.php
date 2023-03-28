@@ -4,7 +4,7 @@ include '../connection.php';
 session_start();
 
 if (!isset($_SESSION['username'])) {
-    header("Location: ../index.php");
+    header("Location: ../home.php");
 }
 $username = $_SESSION['username'];
 
@@ -31,17 +31,17 @@ $username = $_SESSION['username'];
     <div class="background blue">
         <nav class="navbar navbar-expand-lg mb-5">
             <div class="container-fluid">
-                <a class="navbar-brand me-4" href="../index.php"><img src="../assets/img/icon.png" alt="" class="img-fluid me-2" style="width: 3rem;">NotesApp</a>
+                <a class="navbar-brand me-4" href="../home.php"><img src="../assets/img/icon.png" alt="" class="img-fluid me-2" style="width: 3rem;">NotesApp</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="togglerIcon navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.php">Home</a>
+                            <a class="nav-link" aria-current="page" href="../home.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../#info">About</a>
+                            <a class="nav-link" href="../home.php#info">About</a>
                         </li>
                         <li class="nav-item">
                             <form class="d-flex" role="search">
@@ -111,7 +111,7 @@ $username = $_SESSION['username'];
     <footer class="background blue">
         <div class="spread"></div>
         <div class="posi mx-auto p-3">
-            <a class="footerIcon" href="index.html"><span class="text-xl me-3">NotesApp</span></a>
+            <a class="footerIcon" href="home.php"><span class="text-xl me-3">NotesApp</span></a>
             <span class="left-border">Copyright &copy; 2023 NotesApp.com (by Arpan Seal)</span>
         </div>
     </footer>
