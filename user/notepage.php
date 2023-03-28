@@ -86,7 +86,7 @@ $username = $_SESSION['username'];
                     $title = $row['title'];
                     $text = $row['text'];
             ?>
-                    <div class="card noteCard m-2" id="card-bg" style="background: url('../assets/img/note<?php echo $row['No'] % 5; ?>.png') no-repeat center center/cover;">
+                    <div class="card noteCard m-2" style="background: url('../assets/img/note<?php echo $row['No'] % 5; ?>.png') no-repeat center center/cover;">
                         <div class="card-body" id="noteBody">
                             <br>
                             <h4 class="card-title" id="noteTitle"><?php echo $row['title']; ?></h4>

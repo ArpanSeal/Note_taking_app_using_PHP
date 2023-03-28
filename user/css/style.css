@@ -118,10 +118,10 @@
   transform: rotate(4deg);
 }
 
-#card-bg {
-  border: none;
-  width: 25rem;
-  height: 25rem;
+.noteCard {
+  border: none !important;
+  width: 25rem !important;
+  height: 25rem !important;
   font-size: 1.1rem;
   font-family: 'Shantell Sans', cursive;
   color: rgb(0, 0, 194);
