@@ -109,7 +109,7 @@ $username = $_SESSION['username'];
     <footer class="background blue">
         <div class="spread"></div>
         <div class="posi mx-auto p-3">
-            <a class="footerIcon" href="home.php"><span class="text-xl me-3">NotesApp</span></a>
+            <a class="footerIcon" href="../home.php"><span class="text-xl me-3">NotesApp</span></a>
             <span class="left-border">Copyright &copy; 2023 NotesApp.com (by Arpan Seal)</span>
         </div>
     </footer>
