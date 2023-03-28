@@ -44,9 +44,7 @@ $username = $_SESSION['username'];
                             <a class="nav-link" href="../home.php#info">About</a>
                         </li>
                         <li class="nav-item">
-                            <form class="d-flex" role="search">
-                                <input class="form-control ms-5" id="search" type="search" placeholder="Search" aria-label="Search">
-                            </form>
+                            <input class="form-control ms-5" id="search" type="search" placeholder="Search" aria-label="Search">
                         </li>
                     </ul>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
