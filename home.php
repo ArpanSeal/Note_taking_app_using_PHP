@@ -330,7 +330,7 @@ session_start();
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" style="z-index: 1; position: relative;">
 
             <div class="copyright-wrap d-md-flex py-4">
                 <div class="me-md-auto text-center text-md-start">
