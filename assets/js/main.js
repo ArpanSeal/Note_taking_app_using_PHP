@@ -174,19 +174,10 @@
   /**
    * Preloader
    */
-  let preloader = select("#preloader");
+  let preloader = select('#preloader');
   if (preloader) {
-    window.setTimeout(function () {
-      window.addEventListener(
-        "load",
-        () => {
-          window.setTimeout(function fadeout() {
-            $("#preloader").delay(500).fadeOut();
-          }, 1000);
-          preloader.remove();
-        },
-        1000
-      );
+    window.addEventListener('load', () => {
+      preloader.remove()
     });
   }
 
