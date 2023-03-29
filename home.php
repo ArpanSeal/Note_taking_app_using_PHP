@@ -83,7 +83,7 @@ session_start();
                 </div>
                 <div class="spread"></div>
                 <div class="col-xl-5 col-lg-6 order-2 order-lg-1 home-img" data-aos="zoom-in" data-aos-delay="150" style="z-index: 1;">
-                    <img src="assets/img/header.gif" class="img-fluid" style="width: 30rem;" alt="">
+                    <img src="assets/img/header.gif" class="img-fluid animated" style="width: 30rem;" alt="">
                 </div>
             </div>
         </div>

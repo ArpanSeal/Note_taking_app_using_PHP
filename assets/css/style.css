@@ -573,8 +573,7 @@ input.invalid {
     padding-top: 68px;
   }
   #home .animated {
-    -webkit-animation: none;
-    animation: none;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
   #home .home-img {
     text-align: center;
