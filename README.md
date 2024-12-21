@@ -15,6 +15,6 @@ Database : MySQL
 • Help you to understand the advantages of note-taking
 
 # Demo
-View live demo of this project 👇
+View live demo of this project 👇 (Sorry, currently non-operational)
 
 https://notesapp-arpan.000webhostapp.com/
